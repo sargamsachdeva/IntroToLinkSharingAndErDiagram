@@ -1,0 +1,324 @@
+<head>
+    <html>
+    <title>
+        Link Sharing Edit Profile Page
+    </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="css/style_edit.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default custom-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand modal-title" href="#">Link Sharing</a>
+            </div>
+
+
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user pull-right"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-right">
+                    <div class="input-group ">
+                        <span class="input-group-addon" id="sizing-addon-search">
+<a href="#"><span class="glyphicon glyphicon-search"></span>
+                        </a>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon-search sizing-addon-remove">
+
+                        <span class="input-group-addon" id="sizing-addon-remove">
+  <a href="#"><span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                        </span>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="user-info-box" class="mainbox col-md-12 col-md-offset-3 col-sm-12 col-sm-offset-2 ">
+                                <div class="panel panel-primary panelUser">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-4 text-center">
+                                                <a href="#"><span class="glyphicon glyphicon-user span-user"></span></a>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h2 class="only-bottom-margin">User Name</h2>
+                                                        <span class="text-muted">@username</span>
+                                                        <br>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <span class="text-muted">Subscriptions</span>
+                                                        <br>
+                                                        <a href="#">30</a>
+                                                        <br>
+
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <span class="text-muted">Topics</span>
+                                                        <br>
+                                                        <a href="#">30</a>
+                                                        <br>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="save-topics-box" class="mainbox col-sm-12 col-sm-offset-3 col-sm-12 col-sm-offset-3 ">
+                                <div class="panel panel-primary panelTopics">
+                                    <div class="panel-heading">
+
+                                        <div class="panel-title"> Topics
+
+                                            <div class="col-sm-6 pull-right">
+
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="sizing-addon-search1">
+              <a href="#"><span class="glyphicon glyphicon-search"></span>
+                                                    </a>
+                                                    </span>
+                                                    <input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon-search1 sizing-addon-remove1">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-2 text-center">
+                                                <a href="#"><span class="glyphicon glyphicon-user glyphicon-user-topics"></span></a>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <input id="topic-name" type="text" class="form-control" name="topicName" placeholder="Topic name">
+                                                    </div>
+
+                                                    <div class="col-sm-6">
+                                                        <span class="text-muted">@username</span>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <span class="text-muted">Subscriptions</span>
+                                                        <br>
+                                                        <a href="#">30</a>
+                                                        <br>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <input id="save-topic" type="submit" name="submit" class="btn btn-primary btn-block" value="Save">
+                                                    </div>
+
+                                                    <div class="col-md-6" style="margin-left:20px">
+                                                        <span class="text-muted">Post</span>
+                                                        <br>
+                                                        <a href="#">30</a>
+                                                        <br>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="dropdown col-sm-4">
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    Serious
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#">Serious</a>
+                                                    </li>
+                                                    <li><a href="#">Casual</a>
+                                                    </li>
+                                                    <li><a href="#">Very_Serious</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+
+                                            <div class="dropdown col-sm-4">
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    Private
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#">Public</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="col-sm-1">
+                                                <a href="#"><span class="glyphicon glyphicon-envelope glyphicon-custom-envelope-edit-trash"></span></a>
+                                            </div>
+
+                                            <div class="col-sm-1">
+                                                <a href="#"><span class="glyphicon glyphicon-edit glyphicon-custom-envelope-edit-trash"></span></a>
+                                            </div>
+
+                                            <div class="col-sm-1">
+                                                <a href="#"><span class="glyphicon glyphicon-trash glyphicon-custom-envelope-edit-trash"></span></a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="profile-box" class="mainbox col-md-8 col-md-offset-3 col-sm-8 col-sm-offset-2 ">
+                                <div class="panel panel-primary panelProfile">
+                                    <div class="panel-heading">
+                                        <div class="panel-title">Profile</div>
+                                    </div>
+
+                                    <div style="padding-top:30px" class="panel-body">
+                                        <form id="loginform" class="form-horizontal" role="form">
+
+                                            <div class="form-group row">
+                                                <label for="firstName" class="col-sm-4 form-control-label">First Name*</label>
+                                                <div class="col-sm-8">
+                                                    <input id="login-firstName" type="text" class="form-control" name="firstName" placeholder="Firstname">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="lastName" class="col-sm-4 form-control-label">Last Name*</label>
+                                                <div class="col-sm-8">
+                                                    <input id="login-lastName" type="text" class="form-control" name="lastName" placeholder="Lastname">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="userName" class="col-sm-4 form-control-label">User Name*</label>
+                                                <div class="col-sm-8">
+                                                    <input id="login-userName" type="text" class="form-control" name="userName" placeholder="Username">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="photo" class="col-sm-4 form-control-label">Photo</label>
+
+                                                <div class="col-sm-4">
+                                                    <input id="photo" type="text" name="photo" accept=".jpeg,.jpg,.png">
+                                                </div>
+
+                                                <div class="col-sm-4">
+                                                    <input id="button-browse" type="button" name="button-browse" value="Browse" accept=".jpeg,.jpg,.png" class="btn btn-primary">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-offset-4 col-sm-4">
+                                                    <input id="btn-update-profile" type="submit" name="submit" value="Update" class="btn btn-primary btn-block" />
+                                                </div>
+                                            </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="change-password-box" class="mainbox col-md-8 col-md-offset-3 col-sm-8 col-sm-offset-2 ">
+                                <div class="panel panel-default panel-primary panelChangePassword">
+                                    <div class="panel-heading">
+                                        Change Password
+                                    </div>
+
+                                    <div class="panel-body">
+                                        <form id="passwordform" class="form-horizontal" role="form">
+                                            <div class="form-group row">
+                                                <label for="password" class="col-sm-6 form-control-label">Password*</label>
+
+                                                <div class="col-sm-6">
+                                                    <input name="password" type="password" class="form-control" placeholder="Password" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <label for="confirmPassword" class="col-sm-6 form-control-label">Confirm Password*</label>
+
+                                                <div class="col-sm-6">
+                                                    <input name="confirmPassword" type="password" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group row">
+                                                <div class="col-sm-offset-4 col-sm-4 pull-right">
+                                                    <input type="submit" name="submit" value="Update" class="btn btn-primary btn-block" />
+                                                </div>
+                                            </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

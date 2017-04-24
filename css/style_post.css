@@ -1,0 +1,51 @@
+.glyphicon-custom-paperclip-edit {
+
+  font-size: 25px;
+  color: #000;
+}
+
+.panelPostContent{
+
+  border-color: #000;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+.glyphicon-custom-userpic-topics{
+
+  font-size : 80px;
+  color: #696969;
+  border: 2px solid grey;
+}
+
+.linkUnderlineAll{
+
+  text-decoration: underline;
+}
+
+.panelTrendingTopics{
+
+  border-color: #000;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+.glyphicon-user-trending-topics{
+
+    font-size: 60px;
+    color: #696969;
+    border: 2px solid grey;
+}
+
+.hr-row{
+  border-bottom: 2px solid #000;
+}
+
+#para-post{
+margin-left:30px margin-right:60px
+}
+
+.row1{
+
+  margin-top: 20px;
+}

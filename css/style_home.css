@@ -1,0 +1,16 @@
+.customNavbarHeader{
+
+  text-decoration: underline;
+}
+
+.panelLogin{
+
+  border-color: #000;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+.custom-forgot-password{
+
+  text-decoration: underline;
+}

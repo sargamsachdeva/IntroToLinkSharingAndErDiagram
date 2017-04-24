@@ -1,0 +1,64 @@
+.custom-navbar{
+
+  border-color: #000;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+.panelUser{
+
+  border-color: #000;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+.span-user{
+
+  font-size : 100px;
+  color: #696969;
+  border: 2px solid grey;
+}
+
+.panelProfile{
+
+  border-color: #000;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+#button-browse{
+
+  margin-left: 40px;
+}
+
+#btn-update-profile {
+
+  margin-left: 160px;
+}
+
+.panelChangePassword{
+
+  border-color: #000;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+.panelTopics{
+
+  border-color: #000;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+.glyphicon-user-topics{
+
+  font-size : 40px;
+  color: #696969;
+  border: 2px solid grey;
+}
+
+.glyphicon-custom-envelope-edit-trash {
+
+  font-size: 25px;
+  color: #000;
+}

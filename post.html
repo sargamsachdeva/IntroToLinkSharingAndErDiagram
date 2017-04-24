@@ -1,0 +1,214 @@
+<head>
+    <html>
+    <title>
+        Link Sharing Post Topics Page
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="css/style_post.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default custom-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand modal-title" href="#">Link Sharing</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user pull-right"></span></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Username <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Profile</a>
+                            </li>
+                            <li><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="input-group ">
+                        <span class="input-group-addon" id="sizing-addon-search">
+<a href="#"><span class="glyphicon glyphicon-search"></span>
+                        </a>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon-search sizing-addon-remove">
+                        <span class="input-group-addon" id="sizing-addon-remove">
+<a href="#"><span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                        </span>
+                    </div>
+                    <a href="#"><span class="glyphicon glyphicon-paperclip glyphicon-custom-paperclip-edit"></span></a>
+                    <a href="#"><span class="glyphicon glyphicon-edit glyphicon-custom-paperclip-edit"></span></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div id="post-content-box">
+                        <div class="panel panel-primary panelPostContent">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <a href="#"><span class="glyphicon glyphicon-user glyphicon-custom-userpic-topics"></span></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-8 ">
+                                            <h2 class="header">User Name</h2>
+                                            <span class="text-muted">@username</span>
+                                        </div>
+                                        <!--<div class="col-sm-4 pull-right text-right"> -->
+                                        <div class="col-sm-4 col-sm-push-10 linkUnderlineAll">
+                                            <a href="#">Grails</a>
+                                        </div>
+                                        <div class="col-sm-4 pull-right col-sm-push-10">
+                                            <span class="text-muted">date and time</span>
+                                        </div>
+                                        <div class="col-sm-5 pull-right col-sm-push-10">
+                                            <span class="glyphicon glyphicon-star"></span>
+                                            <span class="glyphicon glyphicon-star"></span>
+                                            <span class="glyphicon glyphicon-star"></span>
+                                            <span class="glyphicon glyphicon-star"></span>
+                                            <span class="glyphicon glyphicon-star-empty"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p id="para-post">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row pull-right">
+                                    <div class="dropdown col-sm-2 linkUnderlineAll">
+                                        <a href="#">Delete</a>
+                                    </div>
+                                    <div class="dropdown col-sm-2 linkUnderlineAll">
+                                        <a href="#">Edit</a>
+                                    </div>
+                                    <div class="dropdown col-sm-3 linkUnderlineAll">
+                                        <a href="#">Download</a>
+                                    </div>
+                                    <div class="dropdown col-sm-5 linkUnderlineAll">
+                                        <a href="#">View Full Site</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="profile-box">
+                        <div class="panel panel-primary panelTrendingTopics">
+                            <div class="panel-heading">
+                                <div class="panel-title">Trending Topics</div>
+                            </div>
+                            <div style="padding-top:30px" class="panel-body">
+                                <div class="row hr-row">
+                                    <div class="col-sm-2">
+                                        <a href="#"><span class="glyphicon glyphicon-user glyphicon-user-trending-topics"></span></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-8 ">
+                                            <h2 class="header">Name</h2>
+                                            <span class="text-muted">@username</span>
+                                        </div>
+                                        <div class="col-sm-4 pull-right col-sm-push-10 linkUnderlineAll">
+                                            <a href="#">Grails</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-8 linkUnderlineAll">
+                                            <a href="#">Subscribe</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 pull-right">
+                                        <div class="col-sm-8">
+                                            <span class="text-muted">Subscriptions</span>
+                                            <a href="#">50</a>
+                                            <br>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <span class="text-muted">Post</span>
+                                            <a href="#">30</a>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row1">
+                                    <div class="col-sm-2">
+                                        <a href="#"><span class="glyphicon glyphicon-user glyphicon-user-trending-topics"></span></a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-8 ">
+                                            <h2 class="header">Name</h2>
+                                            <span class="text-muted">@username</span>
+                                        </div>
+                                        <div class="col-sm-4 pull-right col-sm-push-10 linkUnderlineAll">
+                                            <a href="#">Grails</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="dropdown col-sm-8">
+                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                Serious
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <li><a href="#">Serious</a>
+                                                </li>
+                                                <li><a href="#">Casual</a>
+                                                </li>
+                                                <li><a href="#">Very_Serious</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 pull-right">
+                                        <div class="col-sm-8">
+                                            <span class="text-muted">Subscriptions</span>
+                                            <a href="#">50</a>
+                                            <br>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <span class="text-muted">Post</span>
+                                            <a href="#">30</a>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="dropdown col-sm-4 pull-left" style="margin-left:80px">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Public
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Private</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-2 linkUnderlineAll">
+                                        <a href="#">Edit</a>
+                                    </div>
+                                    <div class="col-sm-2 linkUnderlineAll">
+                                        <a href="#">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
